@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="900.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phantombrowser.WebPageController">
+   <children>
+      <WebView fx:id="webView" layoutX="-1.0" layoutY="49.0" prefHeight="440.0" prefWidth="900.0" />
+      <TextField fx:id="searchBar" layoutX="138.0" layoutY="24.0" onAction="#loadWebPage" prefHeight="25.0" prefWidth="600.0" />
+      <Button layoutX="738.0" layoutY="24.0" mnemonicParsing="false" onAction="#loadWebPage" prefHeight="25.0" prefWidth="37.0" text="Go!" />
+      <Button layoutX="72.0" layoutY="24.0" mnemonicParsing="false" onAction="#refreshWebPage" prefHeight="25.0" prefWidth="64.0" text="Reload" />
+      <Button fx:id="backB" layoutX="-4.0" layoutY="24.0" mnemonicParsing="false" onAction="#backward" prefHeight="25.0" prefWidth="37.0" text="&lt;-" />
+      <Button fx:id="forwB" layoutX="33.0" layoutY="24.0" mnemonicParsing="false" onAction="#forward" prefHeight="25.0" prefWidth="37.0" text="-&gt;" />
+      <Button layoutX="837.0" layoutY="495.0" mnemonicParsing="false" onAction="#zoomIn" prefHeight="15.0" prefWidth="23.0" text="+">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="869.0" layoutY="495.0" mnemonicParsing="false" onAction="#zoomOut" prefHeight="23.0" prefWidth="23.0" text="-">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="845.0" layoutY="24.0" mnemonicParsing="false" onAction="#showCreators" text="About" />
+      <Button layoutX="783.0" layoutY="24.0" mnemonicParsing="false" onAction="#showHistory" text="History" />
+   </children>
+</AnchorPane>
